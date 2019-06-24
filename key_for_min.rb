@@ -3,10 +3,10 @@
 
 def key_for_min_value(name_hash)
   lowest = name_hash[0]
-   name_hash.each do |name, value|
-     if value < lowest
+   name_hash.each do |name|
+     if name_hash["#{name}"] < lowest
        lowest = name_hash["#{name}"]
      end
   end
-  lowest   
+  lowest
 end
